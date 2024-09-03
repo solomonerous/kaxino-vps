@@ -1,0 +1,528 @@
+<%- include('includes/header') %>
+    <!-- Khuyen Mai Trang Chu CSS -->
+    <style>
+        .khuyen-mai {
+            height: 254px;
+            background: url(/images/khuyenMai/km-banner.png);
+            background-size: contain;
+            position: relative;
+        }
+
+        .khuyen-mai-list {
+            display: flex;
+            flex-wrap: wrap;
+            /* Added to allow items to wrap */
+            position: absolute;
+            top: 8rem;
+            left: 0;
+            width: 100%;
+            /* Ensure it spans the full width */
+        }
+
+        .khuyen-mai-list .item {
+            width: 25%;
+            box-sizing: border-box;
+            /* Ensures padding and borders are included in the width */
+        }
+
+        .khuyen-mai-list .item img {
+            width: 100%;
+            cursor: pointer;
+        }
+    </style>
+
+    <!-- HOT GAME TRANG CHU -->
+    <style>
+        .hot-game {
+            background: url(/images/hotGame/hotGame-banner-2.png);
+            height: 700px;
+            overflow: hidden;
+            background-size: cover;
+            position: relative;
+        }
+
+        .hot-game-list {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            grid-gap: 22px;
+            position: absolute;
+            top: 56%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 62%
+        }
+
+        .hot-game-list img {
+            cursor: pointer;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+
+    <!-- TOP FOOTER -->
+    <style>
+        .top-footer {
+            background: linear-gradient(to top, #332105, #271800);
+            height: 250px
+        }
+
+        .top-footer-list {
+            display: flex;
+            margin: auto;
+            height: 100%;
+            width: 80%;
+            align-items: center
+        }
+
+        .top-footer-list div {
+            width: 25%;
+            padding: 5px
+        }
+
+        .top-footer-list div img {
+            width: 100%;
+        }
+    </style>
+
+    <div ng-class="$ctrl.styles.content" class="BDw45cKhOY5X-HJyc5_2C _13SSqi-CXmhSukDpitbsQ2">
+        <div ng-class="$ctrl.styles.wrapper" class="_1h0fCbtWimc44r9dNSenvs Fyjjbbtu7ez2tp4P1u_9X">
+            <!-- uiView: -->
+            <ui-view class="ng-scope">
+                <gupw-home class="ng-scope ng-isolate-scope">
+                    <gupw-slide-banner class="ng-isolate-scope">
+                        <!-- ngIf: $ctrl.loaded -->
+                        <section ng-class="$ctrl.styles.wrapper" class="ng-scope DQFgka5Xh4HQIYXhzIIT1">
+                            <div class="swiper-wrapper" style="transition-duration: 0ms;">
+                                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active swiper-slide-duplicate swiper-slide"
+                                    data-swiper-slide-index="2"
+                                    style="width: 2497px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                                    <img data-v-bd1b6438=""
+                                        src="https://omegadao.net/assets/images/components/common/banner5.jpg"
+                                        alt="789bet hero-banner-dang-ky-thanh-vien-mb">
+                                </div>
+                                <div data-v-bd1b6438="" class="swiper-slide swiper-slide-duplicate-next swiper-slide"
+                                    data-swiper-slide-index="0"
+                                    style="width: 2497px; opacity: 1; transform: translate3d(-2497px, 0px, 0px); transition-duration: 0ms;">
+                                    <img data-v-bd1b6438=""
+                                        src="https://omegadao.net/assets/images/components/common/banner2.jpg"
+                                        alt="789bet hero banner- casino-mb">
+                                </div>
+                                <div data-v-bd1b6438="" class="swiper-slide swiper-slide-prev swiper-slide"
+                                    data-swiper-slide-index="1"
+                                    style="width: 2497px; opacity: 1; transform: translate3d(-4994px, 0px, 0px); transition-duration: 0ms;">
+                                    <img data-v-bd1b6438=""
+                                        src="https://omegadao.net/assets/images/components/common/banner3.jpg"
+                                        alt="789bet hero-banner-top-vip-thuong-tien-mat-mb">
+                                </div>
+                                <div data-v-bd1b6438=""
+                                    class="swiper-slide swiper-slide-visible swiper-slide-active swiper-slide"
+                                    data-swiper-slide-index="2"
+                                    style="width: 2497px; opacity: 1; transform: translate3d(-7491px, 0px, 0px); transition-duration: 0ms;">
+                                    <img data-v-bd1b6438=""
+                                        src="https://omegadao.net/assets/images/components/common/banner5.jpg"
+                                        alt="789bet hero-banner-dang-ky-thanh-vien-mb">
+                                </div>
+                                <div class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate swiper-slide"
+                                    data-swiper-slide-index="0"
+                                    style="width: 2497px; opacity: 0; transform: translate3d(-9988px, 0px, 0px); transition-duration: 0ms;">
+                                    <img data-v-bd1b6438=""
+                                        src="https://omegadao.net/assets/images/components/common/banner2.jpg"
+                                        alt="789bet hero banner- casino-mb">
+                                </div>
+                            </div>
+
+                            <div ng-class="$ctrl.styles.slide"
+                                class="swiper mySwiperBanner swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                                <div class="swiper-wrapper" id="swiper-wrapper-57589196c97db227">
+                                    <% const images=[ { url: '/images/banner-slide/1.jpg' , link: '/account/deposit' },
+                                        { url: '/images/banner-slide/2.jpg' , link: '/account/deposit' }, {
+                                        url: '/images/banner-slide/3.jpg' , link: '/account/deposit' }, {
+                                        url: '/images/banner-slide/4.jpg' , link: '/account/deposit' }, {
+                                        url: '/images/banner-slide/5.jpg' , link: '/account/deposit' }, {
+                                        url: '/images/banner-slide/6.jpg' , link: '/account/deposit' }, ];
+                                        images.forEach((item, index)=> { %>
+                                        <div class="swiper-slide" role="group" style="width: 1394px;">
+                                            <a href="javascript:window.location='<%= item.link %>';">
+                                                <img src="<%= item.url %>" class="slide-img ls-is-cached lazyloaded"
+                                                    style="cursor: pointer;width: 100%; height: 100%;">
+                                            </a>
+                                        </div>
+                                        <% }); %>
+                                </div>
+                            </div>
+
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+        </div>
+        </section><!-- end ngIf: $ctrl.loaded -->
+        </gupw-slide-banner>
+        <gupw-hot-news class="ng-isolate-scope">
+            <!-- ngIf: $ctrl.newsVisible -->
+            <div ng-class="$ctrl.styles.wrapper" ng-if="$ctrl.newsVisible" class="ng-scope Hra33TxtHu1C-vZkxSDi7">
+                <div ng-class="$ctrl.styles.layer" class="_2f-DvVLvelwJOC7_a45SIc">
+                    <span ng-class="$ctrl.styles.title" translate="Shared_NewsInfo"
+                        class="ng-scope _1HKJOEgSu0SSPbgkWjI0rQ">THÔNG BÁO |</span>
+                    <div ng-class="$ctrl.styles['hot-news']" class="W9N3001mLDTkKCM5ar8j9">
+                        <div marquee="" style="display: block;">
+                            <div style="width: 100000px; transform: translateX(1030px); animation: 226.335s linear 0s infinite normal none running marqueeAnimation-8325873;"
+                                class="js-marquee-wrapper">
+                                <div class="js-marquee" style="margin-right: 0px; float: left;">
+                                    <ul ng-class="$ctrl.styles['news-list']" class="_3O7S0w3esoWg5PVs5ZLUi2">
+                                        <!-- ngRepeat: item in $ctrl.list -->
+                                        <li ng-repeat="item in $ctrl.list" ng-click="$ctrl.go(item)"
+                                            class="ng-binding ng-scope">
+                                            <%=dataPage.session.siteConfig.site_brand_marquee;%>
+                                        </li>
+                                        <!-- end ngRepeat: item in $ctrl.list -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ng-transclude></ng-transclude>
+                    </div>
+                </div>
+            </div>
+        </gupw-hot-news>
+
+        <!-- VIDEO -->
+
+        <section ng-class="$ctrl.styles.movie" class="oa8cG3PNnpHYKCLaolVrO" style="
+    height: 630px;
+    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/c11074500d0597fe4b4a559935a135a1.png) no-repeat center;
+">
+            <div ng-class="$ctrl.styles.wrapper" class="Fyjjbbtu7ez2tp4P1u_9X" style="
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+"> <!-- ngIf: $ctrl.visible -->
+                <div ng-class="$ctrl.styles['movie-wrapper']" ng-if="$ctrl.visible"
+                    class="ng-scope _2tkAnBh-DYmCkFew4v5ISP" style="
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 653px;
+    height: 365px;
+    background-image: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/f333c99d195c2e6aabed4692da645043.png) no-repeat center;
+    border-radius: 10px;
+    overflow: hidden;
+"> <video width="653" height="auto" controls="" autoplay="" muted="">
+                        <source ng-src="https://attapp.me/videos-789bet/ds-789bet-2022-2023.mp4" type="video/mp4"
+                            src="https://attapp.me/videos-789bet/ds-789bet-2022-2023.mp4">
+                    </video> </div><!-- end ngIf: $ctrl.visible -->
+            </div>
+        </section>
+
+
+        <!-- THUONG HIEU -->
+
+        <section ng-class="$ctrl.styles.bonus" class="_2tjuLMlUmn8Smoy-7ve1OJ" style="
+    margin: -175px 0 20px;
+">
+            <div ng-class="$ctrl.styles.wrapper" class="Fyjjbbtu7ez2tp4P1u_9X" style="
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+">
+                <ul style="
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+">
+                    <li style="
+    background-image: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/06e9a15691fa566efbd6b5a5eb906f1c.png);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: top;
+    width: 292px;
+    height: 176px;
+    padding-left: 15px;
+    padding-right: 140px;
+">
+                        <h4 style="
+    color: #f49a25;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+">THƯƠNG HIỆU UY TÍN</h4>
+                        <p style="
+    color: #d4d4d4;
+    font-size: 14px;
+"> Thương hiệu uy tín<br> hàng đầu trên thị<br> trường nạp rút tiền tỉ<br> không cần lo lắng </p>
+                    </li>
+                    <li style="
+    background-image: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/b93331b4b3a45cb19c7d0f80cc63d8c9.png);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: top;
+    width: 292px;
+    height: 176px;
+    padding-left: 15px;
+    padding-right: 140px;
+">
+                        <h4 style="
+    color: #f49a25;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+">SẢN PHẨM ĐA DẠNG</h4>
+                        <p style="
+    color: #d4d4d4;
+    font-size: 14px;
+"> Trò chơi, Casino,<br> Thể Thao, Bắn Cá,<br> Xổ Số. Nhiều<br> sản phẩm đa dạng<br> bạn lựa chọn. </p>
+                    </li>
+                    <li style="
+    background-image: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/a6b8c3e690e12b34208e216113f8d01d.png);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: top;
+    width: 292px;
+    height: 176px;
+    padding-left: 15px;
+    padding-right: 140px;
+">
+                        <h4 style="
+    color: #f49a25;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+">GIAO DỊCH <br>NHANH CHÓNG</h4>
+                        <p style="
+    color: #d4d4d4;
+    font-size: 14px;
+"> Gửi tiền xử lý ngay<br> từ khi nhận được.<br> Rút tiền đơn giản<br> nhanh chóng. </p>
+                    </li>
+                    <li style="
+    background-image: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/b548b67c565758298e4cd88bf87cb7d9.png);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: top;
+    width: 292px;
+    height: 176px;
+    padding-left: 15px;
+    padding-right: 140px;
+">
+                        <h4 style="
+    color: #f49a25;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+">AN NINH BẢO MẬT</h4>
+                        <p style="
+    color: #d4d4d4;
+    font-size: 14px;
+"> Phương thức thanh<br> toán đa dạng, đảm<br> bảo an ninh và bảo<br> mật thông tin. </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- HŨ SẮP NỔ -->
+
+        <section ng-class="$ctrl.styles.jackpot" class="_3dnG8pTqXGrh0etPH5MUfS" style="
+    height: 510px;
+    color: #fff;
+    background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/81fe124d34c8ad8ae697db969586e4bc.png) no-repeat center top;
+">
+            <div ng-class="$ctrl.styles.wrapper" class="Fyjjbbtu7ez2tp4P1u_9X" style="
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+"> <!-- ngIf: $ctrl.visible --><!-- end ngIf: $ctrl.visible --> </div>
+        </section>
+
+        <!-- HOT GAME -->
+
+        <section ng-class="$ctrl.styles.entrance" class="-BgKG5tzDEA1HHVEz3a9y" style="
+    display: block;
+">
+            <div ng-class="$ctrl.styles.wrapper" class="Fyjjbbtu7ez2tp4P1u_9X" style="
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+">
+                <h2 ng-class="$ctrl.styles.title" class="mStjgcADwBgprsQLlvjuO" style="
+    position: relative;
+    height: 48px;
+    margin: 0;
+    padding-left: 20px;
+    color: #fc8f00;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 48px;
+    background-image: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/30606dfc8c7775a8530fac4d10ca70e0.png);
+">Sản phẩm đa dạng</h2>
+                <ul style="
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+    flex-flow: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;">
+                    <!-- ngRepeat: item in $ctrl.entranceList -->
+                    <li ng-repeat="item in $ctrl.entranceList" ui-sref="lobby-live"
+                        ng-style="{&quot;background-image&quot;:&quot;url('https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/567bc788399cfb49dad419824dead311.png')&quot;}"
+                        class="ng-scope" onclick="window.location='/Lobby/Live'" ng-click="nav.click($event)"
+                        style="background-image: url(&quot;https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/567bc788399cfb49dad419824dead311.png&quot;);width: 468px;height: 230px;margin-top: 21px;">
+                    </li>
+                    <!-- end ngRepeat: item in $ctrl.entranceList -->
+                    <li ng-repeat="item in $ctrl.entranceList" ui-sref="lobby-sport"
+                        ng-style="{&quot;background-image&quot;:&quot;url('https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/2f58f6eb6b92244568e70480be6b5298.png')&quot;}"
+                        class="ng-scope" onclick="window.location='/Lobby/Sport'" ng-click="nav.click($event)"
+                        style="background-image: url(&quot;https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/2f58f6eb6b92244568e70480be6b5298.png&quot;);width: 227px;height: 231px;margin-top: 21px;background-position: center top;">
+                    </li>
+                    <!-- end ngRepeat: item in $ctrl.entranceList -->
+                    <li ng-repeat="item in $ctrl.entranceList" ui-sref="lobby-slot"
+                        ng-style="{&quot;background-image&quot;:&quot;url('https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/ba44e3caf7df6bab1235809c9874fc75.png')&quot;}"
+                        class="ng-scope" onclick="window.location='/Lobby/Game'" ng-click="nav.click($event)"
+                        style="background-image: url(&quot;https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/ba44e3caf7df6bab1235809c9874fc75.png&quot;);width: 227px;height: 231px;margin-top: 21px;background-position: center top;">
+                    </li>
+                    <!-- end ngRepeat: item in $ctrl.entranceList -->
+                    <li ng-repeat="item in $ctrl.entranceList" ui-sref="lobby-fish"
+                        ng-style="{&quot;background-image&quot;:&quot;url('https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/4331e1e5362f939f0034f1183d55c676.png')&quot;}"
+                        class="ng-scope" onclick="window.location='/Lobby/Fish'"
+                        style="background-image: url(&quot;https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/4331e1e5362f939f0034f1183d55c676.png&quot;);width: 227px;height: 231px;margin-top: 21px;background-position: center top;">
+                    </li>
+                    <!-- end ngRepeat: item in $ctrl.entranceList -->
+                    <li ng-repeat="item in $ctrl.entranceList" ui-sref="lobby-board"
+                        ng-style="{&quot;background-image&quot;:&quot;url('https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/35fd3ef775aac915862c6b7c2e309b45.png')&quot;}"
+                        class="ng-scope" onclick="window.location='/Lobby/Board'"
+                        style="background-image: url(&quot;https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/35fd3ef775aac915862c6b7c2e309b45.png&quot;);width: 227px;height: 231px;margin-top: 21px;background-position: center top;">
+                    </li>
+                    <!-- end ngRepeat: item in $ctrl.entranceList -->
+                    <li ng-repeat="item in $ctrl.entranceList" ui-sref="lobby-lottery"
+                        ng-style="{&quot;background-image&quot;:&quot;url('https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/080fb35d894171334761d378446dbff8.png')&quot;}"
+                        class="ng-scope" onclick="window.location='/Lobby/Lotery'"
+                        style="background-image: url(&quot;https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/080fb35d894171334761d378446dbff8.png&quot;);width: 227px;height: 231px;margin-top: 21px;background-position: center top;">
+                    </li>
+                    <!-- end ngRepeat: item in $ctrl.entranceList -->
+                    <li ng-repeat="item in $ctrl.entranceList" ui-sref="lobby-cock-fighting"
+                        ng-style="{&quot;background-image&quot;:&quot;url('https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/58b43839099ca1b379c4c1524987d476.png')&quot;}"
+                        class="ng-scope" onclick="window.location='/Lobby/CockFighting'"
+                        style="background-image: url(&quot;https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/58b43839099ca1b379c4c1524987d476.png&quot;);<li ng-repeat=&quot;item in $ctrl.entranceList&quot; ui-sref=&quot;lobby-cock-fighting&quot; ng-style=&quot;{&amp;quot;background-image&amp;quot;: &amp;quot;url('https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/58b43839099ca1b379c4c1524987d476.png')&amp;quot;}&quot; class=&quot;ng-scope&quot; href=&quot;/Lobby/CockFighting&quot; style=&quot;background-image: url(&amp;quot;https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/58b43839099ca1b379c4c1524987d476.png&amp;quot;);&quot;></li>;<li ng-repeat=&quot;item in $ctrl.entranceList&quot; ui-sref=&quot;lobby-cock-fighting&quot; ng-style=&quot;{&amp;quot;background-image&amp;quot;: &amp;quot;url('https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/58b43839099ca1b379c4c1524987d476.png')&amp;quot;}&quot; class=&quot;ng-scope&quot; href=&quot;/Lobby/CockFighting&quot; style=&quot;background-image: url(&amp;quot;https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/58b43839099ca1b379c4c1524987d476.png&amp;quot;);&quot;></li>;<li ng-repeat=&quot;item in $ctrl.entranceList&quot; ui-sref=&quot;lobby-cock-fighting&quot; ng-style=&quot;{&amp;quot;background-image&amp;quot;: &amp;quot;url('https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/58b43839099ca1b379c4c1524987d476.png')&amp;quot;}&quot; class=&quot;ng-scope&quot; href=&quot;/Lobby/CockFighting&quot; style=&quot;background-image: url(&amp;quot;https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/58b43839099ca1b379c4c1524987d476.png&amp;quot;);&quot;></li>;width: 227px;height: 231px;margin-top: 21px;background-position: center top;">
+                    </li>
+                    <!-- end ngRepeat: item in $ctrl.entranceList -->
+                    <li ng-repeat="item in $ctrl.entranceList" ui-sref="partner"
+                        ng-style="{&quot;background-image&quot;:&quot;url('https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/973b19160f89e4bb0f9b00331ea50475.png')&quot;}"
+                        class="ng-scope" onclick="window.location='/account/agency'"
+                        style="background-image: url(&quot;https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/973b19160f89e4bb0f9b00331ea50475.png&quot;);width: 227px;height: 231px;margin-top: 21px;background-position: center top;">
+                    </li>
+                    <!-- end ngRepeat: item in $ctrl.entranceList -->
+                    <li ng-repeat="item in $ctrl.entranceList" ui-sref="promotion"
+                        ng-style="{&quot;background-image&quot;:&quot;url('https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/7056dab1fcd784b1cf5635a14b0c61e0.png')&quot;}"
+                        class="ng-scope" onclick="window.location='/Promotion'"
+                        style="background-image: url(&quot;https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/96956489f0/images/7056dab1fcd784b1cf5635a14b0c61e0.png&quot;);width: 227px;height: 231px;margin-top: 21px;background-position: center top;">
+                    </li>
+                    <!-- end ngRepeat: item in $ctrl.entranceList -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- IMAGE -->
+
+        <section ng-class="$ctrl.styles.app" class="_32RZPMC6RN8w5D_uvcwEmk"
+            style=" height: 675px; background-color: black; margin-top: 20px; background: url(https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/67b34882dc/images/def409a64395ac399cd9a3cddb5344e0.png) no-repeat center top;">
+            <div ng-class="$ctrl.styles.wrapper" class="Fyjjbbtu7ez2tp4P1u_9X">
+                <ul>
+                    <li> <a target="_blank" rel="nofollow noopener" ng-href="https://www.789clubs.world/"
+                            href="https://www.789clubs.world/"></a> </li>
+                    <li> <a target="_blank" rel="nofollow noopener" ng-href="https://www.789clubs.world/"
+                            href="https://www.789clubs.world/"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section ng-class="$ctrl.styles['section-5']" class="eOsoMRt5HAScmyIBXcYPb" style=" margin-top: -145px;">
+            <div ng-class="$ctrl.styles.wrapper" class="Fyjjbbtu7ez2tp4P1u_9X"
+                style=" position: relative; width: 1200px; margin: 0 auto;">
+                <ul
+                    style=" display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; margin: 0; padding: 0; list-style: none;">
+                    <!-- ngRepeat: item in $ctrl.newsList -->
+                    <li ng-repeat="item in $ctrl.newsList" ng-click="$ctrl.selectLobby(item)" class="ng-scope">
+                        <a ng-href="" target="_blank" rel="nofollow noopener">
+                            <!-- ngIf: !item.active --> <!-- ngIf: item.active -->
+                            <img ng-if="item.active"
+                                ng-src="https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/67b34882dc/images/23075753a882915ae797127465adef69.png"
+                                class="ng-scope"
+                                src="https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/67b34882dc/images/23075753a882915ae797127465adef69.png"
+                                style="">
+                            <!-- end ngIf: item.active --> </a>
+                    </li>
+                    <!-- end ngRepeat: item in $ctrl.newsList -->
+                    <li ng-repeat="item in $ctrl.newsList" ng-click="$ctrl.selectLobby(item)" class="ng-scope"> <a
+                            ng-href="" target="_blank" rel="nofollow noopener"> <!-- ngIf: !item.active --><img
+                                ng-if="!item.active"
+                                ng-src="https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/67b34882dc/images/5ef3769771871606c3228e60cebb2b17.png"
+                                class="ng-scope"
+                                src="https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/67b34882dc/images/5ef3769771871606c3228e60cebb2b17.png">
+                            <!-- end ngIf: !item.active -->
+                            <!-- ngIf: item.active --> </a> </li>
+                    <!-- end ngRepeat: item in $ctrl.newsList -->
+                    <li ng-repeat="item in $ctrl.newsList" ng-click="$ctrl.selectLobby(item)" class="ng-scope"> <a
+                            ng-href="" target="_blank" rel="nofollow noopener">
+                            <!-- ngIf: !item.active -->
+                            <img ng-if="!item.active"
+                                ng-src="https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/67b34882dc/images/32ee82eef36717830e71c4c81abae0ae.png"
+                                class="ng-scope"
+                                src="https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/67b34882dc/images/32ee82eef36717830e71c4c81abae0ae.png">
+                            <!-- end ngIf: !item.active --> <!-- ngIf: item.active --> </a> </li>
+                    <!-- end ngRepeat: item in $ctrl.newsList -->
+                    <li ng-repeat="item in $ctrl.newsList" ng-click="$ctrl.selectLobby(item)" class="ng-scope"> <a
+                            ng-href="" target="_blank" rel="nofollow noopener">
+                            <!-- ngIf: !item.active --><img ng-if="!item.active"
+                                ng-src="https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/67b34882dc/images/03234e0229c3b46154bb1aa9e6191e72.png"
+                                class="ng-scope"
+                                src="https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/67b34882dc/images/03234e0229c3b46154bb1aa9e6191e72.png">
+                            <!-- end ngIf: !item.active -->
+                            <!-- ngIf: item.active --> </a> </li>
+                    <!-- end ngRepeat: item in $ctrl.newsList -->
+                    <li ng-repeat="item in $ctrl.newsList" ng-click="$ctrl.selectLobby(item)" class="ng-scope">
+                        <a ng-href="https://phim789b.pro/" target="_blank" rel="nofollow noopener"
+                            href="https://phim789b.pro/">
+                            <!-- ngIf: !item.active -->
+                            <img ng-if="!item.active"
+                                ng-src="https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/67b34882dc/images/2a75e1a9a0806fa9764013d8df856c72.png"
+                                class="ng-scope"
+                                src="https://gwfd.qatgwawm.net/system-requirement/Web.PortalNew/UK251-01/67b34882dc/images/2a75e1a9a0806fa9764013d8df856c72.png">
+                            <!-- end ngIf: !item.active --> <!-- ngIf: item.active --> </a>
+                    </li><!-- end ngRepeat: item in $ctrl.newsList -->
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- TOP FOOTER -->
+        <section class="top-footer">
+            <div class="top-footer-list">
+                <div>
+                    <img src="/images/topFooter/topFooter-1.png" alt="">
+                </div>
+                <div>
+                    <img src="/images/topFooter/topFooter-2.png" alt="">
+                </div>
+                <div>
+                    <img src="/images/topFooter/topFooter-3.png" alt="">
+                </div>
+                <div>
+                    <img src="/images/topFooter/topFooter-4.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        </gupw-home>
+        </ui-view>
+    </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="/core/js/lobby/homepage.js"></script>
+
+    <%- include('includes/footer') %>
